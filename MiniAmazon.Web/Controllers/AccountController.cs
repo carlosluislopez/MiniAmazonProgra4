@@ -81,7 +81,8 @@ namespace MiniAmazon.Web.Controllers
                 return RedirectToAction("Index");
             }
             var categoryInputModel = _mappingEngine.Map<Category, CategoryInputModel>(account);
-            ViewBag.Title = "Edit Category";
+            //Probando GITs
+            ViewBag.Title = "Edit Category2";
             return View(categoryInputModel);
             return View(new AccountResetInModel());
         }
