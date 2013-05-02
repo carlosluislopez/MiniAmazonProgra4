@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="100F938E-9BCC-4F64-8E40-2FC68F497863" ModuleId="MiniAmazon.Web" />
+  <Module PersistentId="ED9182BF-61B9-4F2B-B400-39127FBFA236" ModuleId="MiniAmazon.Data" />
+  <Module PersistentId="81D9F7D3-FE9B-4E55-8876-102311DAD57A" ModuleId="MiniAmazon.Domain" />
+  <Module PersistentId="98AD66B0-A3AD-48C6-91E5-1D6B74185AD4" ModuleId="MiniAmazon.DatabaseDeployer" />
+</Modules>

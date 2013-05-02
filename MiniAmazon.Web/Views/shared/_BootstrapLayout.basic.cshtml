@@ -1,0 +1,55 @@
+@using System.Web.Optimization
+@using BootstrapSupport
+@using NavigationRoutes
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>@ViewBag.Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="@Styles.Url("~/content/css")" rel="stylesheet"/>
+        @RenderSection("head", required: false)
+        @Html.Partial("_html5shiv")
+        @* favicons and touch icons go here *@
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="brand">@Html.ActionLink("Miniamazon","Index","Dashboard")</div>
+                    <ul class="nav">
+                        <li>@Html.ActionLink("Category","Index","Category")</li>                        
+                    </ul>
+                    <div class="btn-group nav pull-right">
+                        <form class="navbar-search pull-left">
+                            <input type="text" class="search-query" placeholder="Search">
+                            <button type="submit" class="btn">Search</button>
+                        </form>
+                        <button class="btn btn-small">Usuario</button>
+                        <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Login","SignIn","Account")</li>
+                            <li>@Html.ActionLink("Perfil","Index","Dashboard")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Close Session","SignIn","Account")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            @Html.Partial("_alerts")
+            @Html.Partial("_validationSummary")
+            @RenderBody()   
+            <hr>
+            <footer>
+                <p>&copy; Carlos Luis @System.DateTime.Now.ToString("yyyy")</p>
+            </footer> 
+        </div>
+         @Scripts.Render("~/js")
+         @RenderSection("Scripts", required: false)
+    </body>
+</html>
+

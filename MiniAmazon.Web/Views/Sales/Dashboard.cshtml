@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="brand">@Html.ActionLink("Miniamazon","Index","Dashboard")</div>
+            <ul class="nav">
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-search pull-left">
+                <input type="text" class="search-query" placeholder="Search">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+</div>

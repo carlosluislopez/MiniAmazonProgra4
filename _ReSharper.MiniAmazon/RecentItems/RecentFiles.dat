@@ -1,0 +1,59 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/f:IRepository.cs" caret="309" fromTop="12" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:Details.cshtml" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:Index.cshtml" caret="788" fromTop="5" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Infrastructure/f:AutoMapperConfiguration.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:App_Start/f:RouteConfig.cs" caret="412" fromTop="16" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:BootstrapBaseController.cs" caret="174" fromTop="7" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:_BootstrapLayout.basic.cshtml" caret="18" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/f:Global.asax.cs" caret="2303" fromTop="41" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:Edit.cshtml" caret="849" fromTop="19" />
+    <File id="ED9182BF-61B9-4F2B-B400-39127FBFA236/f:Repository.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:_BootstrapLayout.empty.cshtml" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Account/f:SignIn.cshtml" caret="154" fromTop="7" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:HomeController.cs" caret="2039" fromTop="21" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:HomeInputModel.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Sales/f:Dashboard.cshtml" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Account/f:Resset.cshtml" caret="80" fromTop="2" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Dashboard/f:Dashboard.cshtml" caret="69" fromTop="8" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountForgotPassword.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountResetInModel.cs" caret="390" fromTop="15" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:SalesController.cs" caret="209" fromTop="6" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountInputModel.cs" caret="614" fromTop="24" />
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/d:Entities/f:Sale.cs" caret="361" fromTop="14" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:CategoryInputModel.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:SalesInputModel.cs" caret="0" fromTop="0" />
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/d:Entities/f:Account.cs" caret="999" fromTop="38" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:DashboardController.cs" caret="172" fromTop="8" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:CategoryController.cs" caret="2172" fromTop="16" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:AccountController.cs" caret="2397" fromTop="12" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/f:local.config" caret="82" fromTop="1" />
+    <File id="98AD66B0-A3AD-48C6-91E5-1D6B74185AD4/f:local.config" caret="82" fromTop="1" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:Create.cshtml" caret="169" fromTop="6" />
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/f:IRepository.cs" caret="628" fromTop="17" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/f:Global.asax.cs" caret="2797" fromTop="18" />
+    <File id="98AD66B0-A3AD-48C6-91E5-1D6B74185AD4/f:AccountSeeder.cs" caret="553" fromTop="21" />
+    <File id="98AD66B0-A3AD-48C6-91E5-1D6B74185AD4/f:SaleSeeder.cs" caret="520" fromTop="20" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountSignInModel.cs" caret="0" fromTop="0" />
+    <File id="ED9182BF-61B9-4F2B-B400-39127FBFA236/f:Repository.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Infrastructure/f:AutoMapperConfiguration.cs" caret="405" fromTop="13" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Dashboard/f:Dashboard.cshtml" caret="63" fromTop="2" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:App_Start/f:RouteConfig.cs" caret="519" fromTop="18" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:shared/f:_BootstrapLayout.basic.cshtml" caret="852" fromTop="20" />
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/d:Entities/f:Account.cs" caret="355" fromTop="12" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Account/f:Resset.cshtml" caret="132" fromTop="6" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Views/d:Account/f:SignIn.cshtml" caret="294" fromTop="11" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountForgotPassword.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountResetInModel.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:AccountInputModel.cs" caret="623" fromTop="24" />
+    <File id="81D9F7D3-FE9B-4E55-8876-102311DAD57A/d:Entities/f:Sale.cs" caret="634" fromTop="24" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:CategoryInputModel.cs" caret="0" fromTop="0" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Models/f:SalesInputModel.cs" caret="796" fromTop="29" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:CategoryController.cs" caret="3664" fromTop="18" />
+    <File id="100F938E-9BCC-4F64-8E40-2FC68F497863/d:Controllers/f:AccountController.cs" caret="2300" fromTop="10" />
+  </RecentEdits>
+</RecentFiles>

@@ -1,0 +1,23 @@
+﻿@using BootstrapSupport
+@model Object
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset class="form-horizontal">
+        <legend>@ViewBag.Title</legend>
+        @foreach (var property in Model.VisibleProperties())
+        {
+            using(Html.ControlGroupFor(property.Name)){
+                @Html.Label(property.Name.ToSeparatedWords(), new { @class = "control-label" })
+                @Html.Editor(property.Name, new { @class = "control-label" })
+            }
+        }
+		<div class="form-actions">
+            <button type="submit" class="btn btn-primary">Delete</button>
+            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn " })
+          </div>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Return", "Index")
+</div>
