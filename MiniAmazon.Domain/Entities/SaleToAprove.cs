@@ -1,11 +1,17 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
 
 namespace MiniAmazon.Domain.Entities
 {
-    public class Sale : IEntity
+    public class SaleToAprove : IEntity
     {
         public virtual long Id { get; set; }
+
+        [Required]
+        public virtual long IdSale { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]
@@ -30,5 +36,7 @@ namespace MiniAmazon.Domain.Entities
 
         [DataType(DataType.ImageUrl)]
         public virtual string Picture { get; set; }
+
+        public virtual bool Status { get; set; }
     }
 }

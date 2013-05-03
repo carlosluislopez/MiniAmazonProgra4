@@ -20,5 +20,6 @@ namespace MiniAmazon.Web.Controllers
         {
             return View();
         }
+
     }
 }

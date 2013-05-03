@@ -63,28 +63,28 @@ namespace MiniAmazon.Web.Controllers
             if(ModelState.IsValid)
             {
                 var account = _mappingEngine.Map<AccountInputModel, Account>(accountInputModel);
-                
+                account.Status = true;
+
                 _repository.Create(account);
 
-
+                Success("Account Created");
                 return RedirectToAction("Index", "Dashboard");
             }
             ViewBag.Title = "Create User";
+            Attention("Data Invalid");
             return View(accountInputModel);
         }
 
         public ActionResult Resset(int id)
         {
-            var account = _repository.First<Category>(x => x.Id == id);
+            var account = _repository.First<Account>(x => x.Id == id);
             if (account == null)
             {
                 return RedirectToAction("Index");
             }
-            var categoryInputModel = _mappingEngine.Map<Category, CategoryInputModel>(account);
-            //Probando GITs
-            ViewBag.Title = "Edit Category2";
-            return View(categoryInputModel);
-            return View(new AccountResetInModel());
+            var accountResetInModel = _mappingEngine.Map<Account, AccountResetInModel>(account);
+            ViewBag.Title = "Reset Password";
+            return View(accountResetInModel);
         }
 
         [HttpPost]
@@ -94,20 +94,28 @@ namespace MiniAmazon.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    if(accountResetInModel.Password != accountResetInModel.Password2)
+                    var accountOld = _repository.GetById<Account>(accountResetInModel.Id);
+                    if(accountOld.Password != accountResetInModel.Password)
                     {
-                        //CODIGO
+                        Attention("Password incorrect");
+                        return View(accountResetInModel);
+                    }
+                    if(accountResetInModel.PasswordNew != accountResetInModel.Password2)
+                    {
+                        Attention("New Password not match with Confirm Password");
+                        return View(accountResetInModel);
                     }
                     var account = _mappingEngine.Map<AccountResetInModel, Account>(accountResetInModel);
-                    var accountOld = _repository.GetById<Account>(accountResetInModel.Id);
 
                     account.Name = accountOld.Name;
                     account.Genre = accountOld.Genre;
                     account.Age = accountOld.Age;
+                    account.Password = accountResetInModel.PasswordNew;
 
+                    _repository.Clear();
                     _repository.Update(account);
-                    Success("Password Reset");
 
+                    Success("Password Reset");
                     return RedirectToAction("Index", "Dashboard");
 
                 }
@@ -118,6 +126,51 @@ namespace MiniAmazon.Web.Controllers
             }
             ViewBag.Title = "Reset Password";
             return View(accountResetInModel);
+        }
+
+
+        public ActionResult Edit(int id)
+        {
+            var account = _repository.First<Account>(x => x.Id == id);
+            if (account == null)
+            {
+                return RedirectToAction("Index");
+            }
+            var accountEditModel = _mappingEngine.Map<Account, AccountEditModel>(account);
+            ViewBag.Title = "Edit Account";
+            return View(accountEditModel);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(AccountEditModel accountEditModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var account = _mappingEngine.Map<AccountEditModel, Account>(accountEditModel);
+                var accountOld = _repository.GetById<Account>(accountEditModel.Id);
+
+                account.Password = accountOld.Password;
+                account.Status = true;
+
+                _repository.Clear();
+                _repository.Update(account);
+
+                Success("Account Edited");
+                return RedirectToAction("Index", "Dashboard");
+            }
+            ViewBag.Title = "Edit Account";
+            Attention("Data Invalid");
+            return View(accountEditModel);
+        }
+
+        public ActionResult VerifyPasswordMatch(string password, string confirmPassword)
+        {
+            if (password == confirmPassword)
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json(false, JsonRequestBehavior.AllowGet);
         }
     }
 }

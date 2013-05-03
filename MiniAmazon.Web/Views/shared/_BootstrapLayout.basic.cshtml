@@ -18,7 +18,8 @@
                 <div class="container">
                     <div class="brand">@Html.ActionLink("Miniamazon","Index","Dashboard")</div>
                     <ul class="nav">
-                        <li>@Html.ActionLink("Category","Index","Category")</li>                        
+                        <li>@Html.ActionLink("Category","Index","Category")</li>
+                        <li>@Html.ActionLink("Sales","Index","Sales")</li>
                     </ul>
                     <div class="btn-group nav pull-right">
                         <form class="navbar-search pull-left">
@@ -31,7 +32,8 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Login","SignIn","Account")</li>
-                            <li>@Html.ActionLink("Perfil","Index","Dashboard")</li>
+                            <li>@Html.ActionLink("Perfil","Edit","Account")</li>
+                            <li>@Html.ActionLink("Reset Password","Resset","Account")</li>
                             <li class="divider"></li>
                             <li>@Html.ActionLink("Close Session","SignIn","Account")</li>
                         </ul>

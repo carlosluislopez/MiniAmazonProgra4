@@ -47,6 +47,11 @@ namespace MiniAmazon.Data
             return itemToUpdate;
         }
 
+        public void Clear()
+        {
+            _session.Clear();
+        }
+
         public void Delete<T>(T itemToDelete)
         {
             _session.Delete(itemToDelete);

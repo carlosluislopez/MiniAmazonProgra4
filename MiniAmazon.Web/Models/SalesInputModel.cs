@@ -12,21 +12,23 @@ namespace MiniAmazon.Web.Models
         public virtual long Id { get; set; }
 
         [Required]
-        [DataType(DataType.DateTime)]
-        public virtual DateTime CreateDateTime { get; set; }
-
-        [Required]
         [StringLength(50)]
-        public virtual string Title { get; set; }
+        public string Title { get; set; }
 
         [StringLength(250)]
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
 
         [Required]
         [DataType(DataType.Currency)]
-        public virtual decimal Price { get; set; }
+        public decimal Price { get; set; }
 
         [Required]
-        public virtual Category Category { get; set; }
+        public int IdCategory { get; set; }
+
+        [Required]
+        public int IdAccount { get; set; }
+
+        [DataType(DataType.ImageUrl)]
+        public string Picture { get; set; }
     }
 }

@@ -19,7 +19,10 @@ namespace MiniAmazon.DatabaseDeployer
                 {
                     Name = "Carlos Luis",
                     Email = "carlosluis_lopez@yahoo.com",
-                    Password = "123"
+                    Password = "123",
+                    Age = 24,
+                    Genre = "M",
+                    Status = true,
                 };
 
             _session.Save(account);

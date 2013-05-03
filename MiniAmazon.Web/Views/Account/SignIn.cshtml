@@ -9,7 +9,7 @@
 @{
     Html.BeginForm("SignIn", "Account", FormMethod.Post, new {@class = "form-signin"});
 
-    <h2 class="form-signin-heading">Please </h2>
+    <h2 class="form-signin-heading">Please Sign In</h2>
 
     @Html.TextBoxFor(x=>x.Email, new {@class="input-block-level",@placeholder="Email address"})
     @Html.PasswordFor(x=>x.Password, new {@class="input-block-level",@placeholder="Password"})

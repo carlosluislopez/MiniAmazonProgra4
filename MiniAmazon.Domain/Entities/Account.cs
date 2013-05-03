@@ -27,6 +27,8 @@ namespace MiniAmazon.Domain.Entities
         [StringLength(1)]
         public virtual string Genre { get; set; }
 
+        public virtual bool Status { get; set; }
+
         public virtual IEnumerable<Sale> Sales
         {
             get { return _sales; }

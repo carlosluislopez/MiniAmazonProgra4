@@ -1,21 +1,20 @@
-﻿@{
+﻿@using BootstrapSupport
+@model MiniAmazon.Web.Models.AccountResetInModel
+@{
     ViewBag.Title = "Resset";
-    Layout = "~/Views/shared/_BootstrapLayout.empty.cshtml";
 }
 
 @{
-    Html.BeginForm("Resset", "Account", FormMethod.Post, new { @class = "form-signin" });
+    Html.BeginForm("Resset", "Account", FormMethod.Post);
 
-    <h2 class="form-signin-heading">Please sign in</h2>
+    <h2>Resset password</h2>
 
-    @Html.TextBoxFor(x=>x.Email, new {@class="input-block-level",@placeholder="Email address"})
-    @Html.PasswordFor(x=>x.Password, new {@class="input-block-level",@placeholder="Password"})
-
-        <label class="checkbox">
-          @Html.CheckBoxFor(x=>x.RememberMe) Remember me
-        </label>
+    @Html.HiddenFor(x => x.Email);
+    @Html.HiddenFor(x => x.Id);
+    @Html.PasswordFor(x=>x.Password, new {@class="input-block-level",@placeholder="Password Old"})
+    @Html.PasswordFor(x=>x.PasswordNew, new {@class="input-block-level",@placeholder="Password New"})
+    @Html.PasswordFor(x=>x.Password2, new {@class="input-block-level",@placeholder="Password Repeat"})
+    
     <button class="btn btn-large btn-primary" type="submit">Sign in</button>
-    @Html.ActionLink("Register", "Create", null, new { @class = "btn btn-large" })
-    <br/>
-    @Html.ActionLink("I forgot my password", "Resset", null, new { @class = "btn " })
+    @Html.ActionLink("Cancel", "Index", "Dashboard");
 }

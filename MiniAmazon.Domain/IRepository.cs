@@ -15,6 +15,7 @@ namespace MiniAmazon.Domain
         IQueryable<T> Query<T>(Expression<Func<T, bool>> expression) where T : class, IEntity;
         T Update<T>(T itemToUpdate) where T : class, IEntity;
         void Delete<T>(T itemToDelete);
+        void Clear();
     }
 
     

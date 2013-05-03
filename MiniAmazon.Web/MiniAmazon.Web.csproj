@@ -176,6 +176,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\AutoMapperConfiguration.cs" />
+    <Compile Include="Models\AccountEditModel.cs" />
     <Compile Include="Models\AccountForgotPassword.cs" />
     <Compile Include="Models\AccountInputModel.cs" />
     <Compile Include="Models\AccountResetInModel.cs" />
@@ -249,12 +250,12 @@
     <Content Include="Views\Account\SignIn.cshtml" />
     <Content Include="Views\Sales\Dashboard.cshtml" />
     <Content Include="Views\shared\Edit.cshtml" />
-    <Content Include="Views\Dashboard\Dashboard.cshtml" />
     <Content Include="Views\shared\Delete.cshtml" />
     <Content Include="Views\Account\Resset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
